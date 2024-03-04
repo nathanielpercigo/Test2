@@ -3,8 +3,11 @@ body {
     
 }
 
+head{
+    background-color: black;
+}
+
 header{
-background-color: black;
    
     display: flex;
     justify-content: space-around;
