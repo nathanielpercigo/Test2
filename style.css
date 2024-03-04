@@ -2,3 +2,10 @@ body {
     background-color: rgb(240, 219, 34);
     
 }
+header{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
