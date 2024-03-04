@@ -5,11 +5,8 @@ body {
 
 head{
     background-color: black;
+    color: black;
     
 }
 
-
-{
-    h1 color: rgb(255, 255, 255);
-    align-items: center
-}
+h1{color: rgb(255, 255, 255);}
