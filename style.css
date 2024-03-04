@@ -8,11 +8,8 @@ head{
     
 }
 
-header{
-   
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 
+{
+    h1{color: rgb(255, 255, 255);} 
+    align-items: center
 }
-h1{color: rgb(255, 255, 255);}
