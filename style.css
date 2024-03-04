@@ -3,14 +3,7 @@ body {
     
 }
 
-head{
-    
-    background-color: black;
-    color: black;
-    
-}
 header {
     background-color: black;
-    position: calc(11,11,11);
 }
 h1{color: rgb(255, 255, 255);}
