@@ -10,3 +10,8 @@ head {
 .img-ben10{
     width: 30%;
 }
+
+div{
+    position: fixed;
+    bottom: 10%;
+}
