@@ -18,9 +18,8 @@ div{
 }
 
 .image-container {
-    position: fixed;
-    top: 50px; 
-    left: 20px; 
+    position: relative;
+    margin: 20px;
 }
 
 
@@ -31,7 +30,7 @@ div{
 
 
 .image-description {
-    position: fixed; 
+    position: relative; 
     top: 50px; 
     right: 20px; 
     width: 30%; 
