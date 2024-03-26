@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head><h1>-------------</h1>
-    <video autoplay muted loop id="myVideo">
-        <source src="ben10.mp4" type="video/mp4" />
-        Your browser does not support HTML5 video.
-    </video>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -43,13 +39,17 @@
     </style>
 </head>
 <body>
+     <video autoplay muted loop id="myVideo">
+        <source src="ben10.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+    </video>
     <header class="header-block"> 
         <!-- h1 para título maior e h6 para menor -->
         <img src="image 1.png" alt="logo Ben 10">
     </header>
 <section class="intro"
 <div>
-    <h2>-------------</h2>
+    <h2>Ben 10</h2>
     <p>Ben 10 é uma série de desenho animado estadunidense criada pelo Man of Action (um grupo que consiste de Duncan Rouleau, 
         Joe Casey, Joe Kelly, e Steven T. Seagle) e produzido pelos estúdios Cartoon Network Studios (antigamente: Hanna-Barbera). 
         A série fala sobre um rapaz que adquiriu um dispositivo alienígena com a aparência de relógio de pulso que lhe permite uma 
@@ -119,6 +119,14 @@
             <p>Diamante é a amostra de DNA do Omnitrix de um Petrosapien do planeta Petropia.</p>
         </div>
     </div>
+
+    <script>
+        window.addEventListener('resize', function() {
+            var video = document.getElementById('myVideo');
+            video.style.minWidth = window.innerWidth + 'px';
+            video.style.minHeight = window.innerHeight + 'px';
+        });
+    </script>
 </section>
 </body>
 </html>
