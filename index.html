@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+<head><h1>-------------</h1>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Background</title>
-    <link rel="stylesheet" href="style.css"> <!-- External CSS file -->
+    <link rel="stylesheet" href="style.css">
     <style>
-        /* Reset margin and padding for the body */
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif; /* Added font family */
         }
 
-        /* Style for video */
-        video {
+         video {
             position: fixed;
             top: 0;
             left: 0;
@@ -26,74 +22,72 @@
         
         .header-block {
             background-color: black;
-            color: rgba(255, 255, 255, 0.8); /* Adjusted text color */
+            color: rgba(0, 0, 0, 0.63);
             padding: 10px;
             position: fixed;
-            top: 0;
+            top: 0%;
             width: 100%;
-            z-index: 1; /* Set higher z-index to appear above the video */
-            text-align: center; /* Center align text */
-        }
-
-        .intro {
-            padding-top: 60px; /* Adjusted padding top to accommodate header */
-            padding-bottom: 20px; /* Added padding bottom for better spacing */
-            color: white; /* Adjusted text color */
-            text-align: justify; /* Justify text */
-            padding-left: 20px; /* Added padding left for better alignment */
-            padding-right: 20px; /* Added padding right for better alignment */
-        }
-
-        .img-ben10 {
-            display: block; /* Display as block element */
-            margin-left: auto; /* Auto margin left */
-            margin-right: auto; /* Auto margin right */
-            max-width: 100%; /* Set maximum width to 100% */
-            height: auto; /* Maintain aspect ratio */
-        }
-
-        /* Style for all images */
-        img {
-            max-width: 100%; /* Set maximum width to 100% */
-            height: auto; /* Maintain aspect ratio */
-            margin-bottom: 20px; /* Add margin below images */
-        }
-
-        /* Style for image descriptions */
-        .image-description {
-            margin-left: 20px; /* Add space between image and description */
         }
     </style>
 </head>
 <body>
     <video autoplay muted loop id="myVideo">
-        <source src="ben10.mp4" type="video/mp4" />
-        Your browser does not support HTML5 video.
-    </video>
+    <source src="ben10.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
     <header class="header-block"> 
+        <!-- h1 para título maior e h6 para menor -->
         <img src="image 1.png" alt="logo Ben 10">
     </header>
-    <section class="intro"> <!-- Added missing opening tag -->
-        <h2>Introdução</h2>
-        <p>Ben 10 é uma série de desenho animado estadunidense criada pelo Man of Action (um grupo que consiste de Duncan Rouleau, 
-            Joe Casey, Joe Kelly, e Steven T. Seagle) e produzido pelos estúdios Cartoon Network Studios (antigamente: Hanna-Barbera). 
-            A série fala sobre um rapaz que adquiriu um dispositivo alienígena com a aparência de relógio de pulso que lhe permite uma 
-            habilidade de se transformar em vários seres alienígenas. É a primeira série da franquia de Ben 10. O primeiro episódio foi 
-            ao ar em 27 de dezembro de 2005 e o último episódio foi ao ar em 15 de abril de 2008. No Brasil, estreou em 4 de agosto de 
-            2006 e terminou em 11 de maio de 2008, já em Portugal, estreou pela primeira vez dublado, a 10 de outubro de 2009, pela Sic e
-            Sic K. A música tema da série foi escrita por Andy Sturmer e cantada por Moxy. Em abril de 2008, Ben 10 foi sucedido por Ben 10:
-            Força Alienígena, que por sua vez foi sucedido em abril de 2010 por Ben 10: Supremacia Alienígena; em 1 agosto de 2012 foi sucedido por 
-            Ben 10: Omniverse; em outubro de 2016 foi sucedido pelo reboot Ben 10, a atual série no ar.</p>
-        <img class="img-ben10" src="ben10.jpeg" alt="foto do ben10">
-    </section> <!-- Added missing closing tag -->
+<section class="intro"
+<div>
+    <h2>-------------</h2>
+    <p>Ben 10 é uma série de desenho animado estadunidense criada pelo Man of Action (um grupo que consiste de Duncan Rouleau, 
+        Joe Casey, Joe Kelly, e Steven T. Seagle) e produzido pelos estúdios Cartoon Network Studios (antigamente: Hanna-Barbera). 
+        A série fala sobre um rapaz que adquiriu um dispositivo alienígena com a aparência de relógio de pulso que lhe permite uma 
+        habilidade de se transformar em vários seres alienígenas.É a primeira série da franquia de Ben 10. O primeiro episódio foi 
+        ao ar em 27 de dezembro de 2005 e o último episódio foi ao ar em 15 de abril de 2008. No Brasil, estreou em 4 de agosto de 
+        2006 e terminou em 11 de maio de 2008, já em Portugal, estreiou pela primeira vez dublado, a 10 de outubro de 2009, pela Sic e
+        Sic K. A música tema da série foi escrita por Andy Sturmer e cantada por Moxy. Em abril de 2008, Ben 10 foi sucedido por Ben 10:
+        Força Alienígena, que por sua vez foi sucedido em abril de 2010 por Ben 10: Supremacia Alienígena; em 1 agosto de 2012 foi sucedido por 
+        Ben 10: Omniverse; em outubro de 2016 foi sucedido pelo reboot Ben 10, a atual série no ar.<p>
+</div>
+    <img class="img-ben10" src="ben10.jpeg" alt="foto do ben10">
+    <style>
+        h1 {
+            color: black; 
+            text-align: center; 
+            margin-top: 50px; 
+            font-size: 24px; 
+            font-family: Roboto, sans-serif; 
+            font-weight: bold; 
+        }
+     
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px;
+        }
 
+        
+        .image-container img {
+            max-width: 30%; 
+            height: auto;
+        }
+
+        
+        .image-description {
+            flex: 1; 
+            margin-left: 20px; 
+        }
+    </style>
     <h1>Aliens</h1>
 
     <div class="image-container">
         <img src="chama.jpg" alt="Imagem alien 1">
         <div class="image-description">
             <h2>Chama</h2>
-                     <p>Chama é a amostra de DNA do Omnitrix de um Pyronita da estrela Pyros.</p>
+            <p>Chama é a amostra de DNA do Omnitrix de um Pyronita da estrela Pyros.</p>
         </div>
     </div>
 
@@ -112,5 +106,7 @@
             <p>Diamante é a amostra de DNA do Omnitrix de um Petrosapien do planeta Petropia.</p>
         </div>
     </div>
+</section>
 </body>
+</video>
 </html>
