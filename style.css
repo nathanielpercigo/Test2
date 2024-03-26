@@ -24,8 +24,7 @@ div{
 
 
 .image-container img {
-    max-width: 300%; 
-    width: 300px;
+    max-width: 30%; 
     height: auto;
 }
 
