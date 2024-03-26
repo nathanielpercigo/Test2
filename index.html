@@ -9,6 +9,16 @@
             margin: 0;
             padding: 0;
         }
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            z-index: -1; /* Set z-index to send it to the back */
+        }
+        
         .header-block {
             background-color: black;
             color: rgba(0, 0, 0, 0.63);
