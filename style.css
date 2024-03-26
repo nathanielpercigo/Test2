@@ -17,6 +17,13 @@ div{
     bottom: 10%;
 }
 
+#myVideo {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+}
+
 .image-container {
     position: relative;
     margin: 20px;
