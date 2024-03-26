@@ -16,3 +16,22 @@ div{
     position: fixed;
     bottom: 10%;
 }
+
+.image-container {
+    position: relative;
+    margin: 20px;
+}
+
+
+.image-container img {
+    max-width: 30%; 
+    height: auto;
+}
+
+
+.image-description {
+    position: fixed; /
+    top: 50px; 
+    right: 20px; 
+    width: 30%; 
+}
