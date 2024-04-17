@@ -41,6 +41,7 @@ div{
 
 
 .image-description {
+    -webkit-text-stroke-color: black;
     position: relative; 
     top: -70px; 
     right: 20px; 
