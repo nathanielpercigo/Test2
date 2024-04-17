@@ -27,7 +27,6 @@ div{
 }
 
 .image-container {
-    image-rendering: crisp-edges;
     position: relative;
     margin: 20px;
 }
