@@ -1,5 +1,6 @@
 body {
     background-image: linear-gradient(black, rgb(3, 82, 3));
+    -webkit-text-stroke-color: black;
     color: green;
     margin: 0;
     padding: 0;
