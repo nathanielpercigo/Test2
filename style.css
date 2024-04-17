@@ -1,6 +1,5 @@
 body {
     background-image: linear-gradient(black, rgb(3, 82, 3));
-    -webkit-text-stroke-color: black;
     color: green;
     margin: 0;
     padding: 0;
@@ -28,6 +27,7 @@ div{
 }
 
 .image-container {
+    image-rendering: crisp-edges;
     position: relative;
     margin: 20px;
 }
@@ -41,10 +41,6 @@ div{
 
 
 .image-description {
-    -webkit-text-stroke-color: black;
-    text-decoration: double;
-    text-decoration: green;
-    text-shadow: 1;
     position: relative; 
     top: -70px; 
     right: 20px; 
