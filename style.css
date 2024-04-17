@@ -1,5 +1,6 @@
 body {
-    background-color: black;color: green;
+    background-image: linear-gradient(black, rgb(3, 82, 3));
+    color: green;
     margin: 0;
     padding: 0;
 }
