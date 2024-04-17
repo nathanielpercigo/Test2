@@ -9,7 +9,8 @@ head {
 }
 
 .img-ben10{
-    width: 30%;
+    position: relative;
+    margin: 20px;
 }
 
 div{
