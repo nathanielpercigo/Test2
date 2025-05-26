@@ -1,215 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senha</title>
     <link rel="stylesheet" href="style.css">
-    <h1>--------------------------</h1>
-    <title>BEN 10</title>
 </head>
+
 <body>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-         video {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw; 
-            height: 100vh; 
-            object-fit: cover; 
-            z-index: -1; 
-        }
-
-         .intro {
-            padding-top: 100px; 
-            padding-left: 20px; 
-            padding-right: 20px; 
-            color: white; 
-            text-align: justify;
-        }
-        
-        .header-block {
-            background-color: black;
-            color: rgba(0, 0, 0, 0.63);
-            padding: 10px;
-            position: fixed;
-            top: 0%;
-            width: 100%;
-            z-index: 1;
-        }
-    </style>
-     <video autoplay muted loop id="myVideo">
-        <source src="ben10.mp4" type="video/mp4" />
-        Your browser does not support HTML5 video.
-    </video>
-    <header class="header-block">
-        <a href="#aliens"> <!-- Alteração: adicionado o href="#aliens" -->
-        <button>Aliens</button>
-    </a>
-    <img src="image 1.png" alt="logo Ben 10">
-    </header>
-<section class="intro"
-<div>
-    <div class="image-container img">
-        <img src="ben10.jpeg" alt="Imagem ben 10">
-        <div class="image-description">
-            <h2>Ben 10</h2>
-            <p>Ben 10 é uma série de desenho animado estadunidense criada pelo Man of Action (um grupo que consiste de Duncan Rouleau, 
-                Joe Casey, Joe Kelly, e Steven T. Seagle) e produzido pelos estúdios Cartoon Network Studios (antigamente: Hanna-Barbera). 
-                A série fala sobre um rapaz que adquiriu um dispositivo alienígena com a aparência de relógio de pulso que lhe permite uma 
-                habilidade de se transformar em vários seres alienígenas.É a primeira série da franquia de Ben 10. O primeiro episódio foi 
-                ao ar em 27 de dezembro de 2005 e o último episódio foi ao ar em 15 de abril de 2008. No Brasil, estreou em 4 de agosto de 
-                2006 e terminou em 11 de maio de 2008, já em Portugal, estreiou pela primeira vez dublado, a 10 de outubro de 2009, pela Sic e
-                Sic K. A música tema da série foi escrita por Andy Sturmer e cantada por Moxy. Em abril de 2008, Ben 10 foi sucedido por Ben 10:
-                Força Alienígena, que por sua vez foi sucedido em abril de 2010 por Ben 10: Supremacia Alienígena; em 1 agosto de 2012 foi sucedido por 
-                Ben 10: Omniverse; em outubro de 2016 foi sucedido pelo reboot Ben 10, a atual série no ar.</p>
+    <section class="conteudo">
+        <div class="conteudo-titulo">
+            <img src="unlock.svg" alt="cadeado fechado">
+            <h2 class="titulo-principal">Gerador de senhas</h2>
+            <h3 class="titulo-secundario">Gere instantaneamente uma senha aleatória e segura</h3>
         </div>
-    </div>
-</div>
-    <style>
-        h1 {
-            color: white; 
-            text-align: center; 
-            margin-top: 50px; 
-            font-size: 24px; 
-            font-family: Roboto, sans-serif; 
-            font-weight: bold; 
-        }
-     
-        .image-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 20px;
-        }
-
-        
-        .image-container img {
-            max-width: 30%; 
-            height: auto;
-        }
-
-        
-        .image-description {
-            flex: 1; 
-            margin-left: 20px; 
-        }
-    </style>
-
-    <h1 id="aliens">Aliens</h1>
-    
-    <div class="image-container">
-        <img src="chama.jpg" alt="Imagem alien 1">
-        <div class="image-description">
-            <h2>Chama</h2>
-            <p>Chama é a amostra de DNA do Omnitrix de um Pyronita da estrela Pyros.</p>
+        <div class="conteudo-senha">
+            <label for="senha">Senha</label>
+            <input name="senha" type="text" id="campo-senha" readonly>
         </div>
-    </div>
-
-    <div class="image-container">
-        <img src="besta.jpg" alt="Imagem alien 2">
-        <div class="image-description">
-            <h2>Besta</h2>
-            <p>Besta é a amostra de DNA do Omnitrix de um Vulpimancer do planeta Vulpin.</p>
+        <div class="parametro">
+            <h3 class="parametro-titulo">Personalize sua senha</h3>
+            <div class="parametro-coluna__senha">
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Número de caracteres</h4>
+                    <div class="parametro-senha-botoes">
+                        <button class="parametro-senha__botao">-</button>
+                        <p class="parametro-senha__texto">12</p>
+                        <button class="parametro-senha__botao">+</button>
+                    </div>
+                </div>
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Características da senha</h4>
+                    <div class="parametro-senha-checkbox">
+                        <input name="maiusculo" type="checkbox" class="checkbox" checked>
+                        <label for="maiusculo">Letras maiúsculas</label>
+                    </div>
+                    <div class="parametro-senha-checkbox">
+                        <input name="minusculo" type="checkbox" class="checkbox">
+                        <label for="minusculo">Letras minúsculas</label>
+                    </div>
+                    <div class="parametro-senha-checkbox">
+                        <input name="numero" type="checkbox" class="checkbox">
+                        <label for="numero">Números</label>
+                    </div>
+                    <div class="parametro-senha-checkbox">
+                        <input name="simbolo" type="checkbox" class="checkbox">
+                        <label for="simbolo">Símbolos</label>
+                    </div>
+                </div>
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Força da senha</h4>
+                    <div class="barra"></div>
+                    <div class="forca fraca"></div>
+                    <div class="parametro-senha-textos">
+                        <p>Fraca</p>
+                        <p>Média</p>
+                        <p>Forte</p>
+                    </div>
+                    <p class="entropia"></p>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="image-container">
-        <img src="diamante.jpg" alt="Imagem alien 3">
-        <div class="image-description">
-            <h2>Diamante</h2>
-            <p>Diamante é a amostra de DNA do Omnitrix de um Petrosapien do planeta Petropia.</p>
-        </div>
-    </div>
-
-    <div class="image-container">
-        <img src="xlr.jpg" alt="Imagem alien 4">
-        <div class="image-description">
-            <h2>XLR8</h2>
-            <p>XLR8 é a amostra de DNA do Omnitrix de um Kinecelerano do planeta Kinet.</p>
-        </div>
-    </div>
-
-    <div class="image-container">
-        <img src="massa.jpg" alt="Imagem alien 5">
-        <div class="image-description">
-            <h2>Massa Cinzenta</h2>
-            <p>Massa Cinzenta é a amostra de DNA do Omnitrix de um Galvaniano do planeta Galvan Prime.</p>
-        </div>
-    </div>
-
-    <div class="image-container">
-        <img src="four arms.jpg" alt="Imagem alien 6">
-        <div class="image-description">
-            <h2>Quatro Braços</h2>
-            <p>Quatro Braços é a amostra de DNA do Omnitrix de um Tetramende do planeta Khoros.</p>
-        </div>
-    </div>
-
-    <div class="image-container">
-        <img src="insect.jpg" alt="Imagem alien 7">
-        <div class="image-description">
-            <h2>Insectóide</h2>
-            <p>Insectóide é a amostra de DNA do Omnitrix de um Lepidopterrano do planeta Lepidopterra.</p>
-        </div>
-    </div>
-
-     <div class="image-container">
-        <img src="aquatico.jpg" alt="Imagem alien 8">
-        <div class="image-description">
-            <h2>Aquático</h2>
-            <p>Aquático é a amostra de DNA do Omnitrix de um Pisccis volann do planeta Picciss.</p>
-        </div>
-    </div>
-
-    <div class="image-container">
-        <img src="ultra.jpg" alt="Imagem alien 9">
-        <div class="image-description">
-            <h2>Ultra T</h2>
-            <p>Ultra T é a amostra de DNA do Omnitrix de um Mecamorfo galvânico da lua Galvan B.</p>
-        </div>
-    </div>
-
-    <div class="image-container">
-        <img src="fantasma.jpg" alt="Imagem alien 10">
-        <div class="image-description">
-            <h2>Fantasmático</h2>
-            <p>Fantasmático é a amostra de DNA do Omnitrix de um Ectonurita do planeta Anur Phaetos.</p>
-        </div>
-    </div>
-
-    <h1>Alunos</h1>
-
-    <div class="image-container">
-        <img src="leonardo.jpg" alt="Pessoa 1">
-        <div class="image-description">
-            <h2>Leonardo Macedo</h2>
-        </div>
-    </div>
-
-    <div class="image-container">
-        <img src="gian.jpg" alt="Pessoa 2">
-        <div class="image-description">
-            <h2>Gian Margoti</h2>
-        </div>
-    </div>
-
-    <div class="image-container">
-        <img src="nathaniel.jpg" alt="Pessoa 3">
-        <div class="image-description">
-            <h2>Nathaniel Percigo</h2>
-        </div>
-    </div>
-
-</section>
-    <footer>
-        <p>SITE CRIADO POR FANS DE BEN 10</p>
-        <p>NOSSOS CONTATOS: percigoben10@gmail.com</p>
-        <p>NOS SIGA NAS REDES: <a href="https://pt.wikipedia.org/wiki/Ben_10">@npercigoben10</p>
-    </footer>
+    </section>
+    <script src="main.js"></script>
 </body>
+
 </html>
